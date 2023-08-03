@@ -1,7 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
   
-  <EliminarEstudiante/>
+  <NavBar/>
+  <router-view/>
+  
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import ConsultaEstudiante from './modules/estudiante/pages/ConsultaEstudiante.vu
 import EliminarEstudiante from './modules/estudiante/pages/EliminarEstudiante.vue'
 import GuardarEstudiante from './modules/estudiante/pages/GuardarEstudiante.vue'
 
+import NavBar from './modules/estudiante/components/NavBar.vue'
 
 
 export default {
@@ -18,12 +20,13 @@ export default {
     ConsultaEstudiante,
     GuardarEstudiante,
     ActualizarEstudiante,
-    EliminarEstudiante
+    EliminarEstudiante,
+    NavBar
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,5 +1,7 @@
 <template>
   <div class="datos">
+    <h1> Guardar Estudiante</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/3286/3286269.png" alt="">
     <label for="">Cedula</label>
     <input v-model="cedula" type="text" />
     <label for="">Nombre</label>
@@ -45,12 +47,30 @@ export default {
         display: grid;
         align-items: center;
         justify-content: center;
+        text-align: center;
         margin-left: 500px;
         grid-template-columns: repeat(2, 1fr);
         width: 30%;
     }
+
     button{
-        
         margin-top: 10px;
+        margin-bottom: 10px;
+        grid-column: span 2;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;    
+      }
+    img{
+      grid-column: span 2;
+      max-width: 50%;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    h1{
+      grid-column: span 2;
+      text-align: center;
     }
 </style>
