@@ -3,7 +3,7 @@
     <h1>Consultar estudiante</h1>
     <img src="https://cdn-icons-png.flaticon.com/512/3176/3176238.png" alt="">
     <input v-model="cedula" type="text">
-    <button @click="consultarEstudiante">Consultar</button>
+    <button @click="recibirEstudiante">Consultar</button>
     <label for="">Nombre</label>
     <input v-model="nombre" type="text">
     <label for="">Apellido</label>
@@ -17,7 +17,7 @@ import { obtenerEstudianteFachada, obtenerEstudianteFachadaAXIOS } from "../help
 export default {
   data() {
     return {
-      cedula: null,
+      cedula: this.$route.params.cedula,
       nombre: null,
       apellido: null
     };
@@ -30,7 +30,23 @@ export default {
       this.apellido=data.apellido;
       console.log(data);
     },
+
+    async recibirEstudiante(cedula) {
+      const data=await obtenerEstudianteFachada(cedula);
+      this.nombre=data.nombre;
+      this.apellido=data.apellido;
+      console.log(data);
+    },
   },
+  
+  mounted(){
+    const {cedula}=this.$route.params
+    this.recibirEstudiante(cedula)
+    console.log(cedula) 
+    console.log(this.$route)
+    const ciu= this.$route.query.ciudad
+    console.log(this.$route.query.ciudad)
+  }
 };
 </script>
 

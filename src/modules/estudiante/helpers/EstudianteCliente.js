@@ -60,6 +60,4 @@ const eliminarPresentarEstudiante = async (id) => {
     console.log("AXIOS Eliminar Presentar")
     const data = axios.delete(`http://localhost:8080/API/v1.0/Matricula/estudiantes/eliminar/${id}`).then(r => r.data);
     console.log(data);
-    return data;
-
 }
