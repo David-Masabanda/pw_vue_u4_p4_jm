@@ -3,7 +3,7 @@
     <h1>Consultar estudiante</h1>
     <img src="https://cdn-icons-png.flaticon.com/512/3176/3176238.png" alt="">
     <input v-model="cedula" type="text">
-    <button @click="consultarEstudiante">Consultar</button>
+    <button type="button" class="btn btn-primary" @click="consultarEstudiante">Consultar</button>
     <label for="">Nombre</label>
     <input v-model="nombre" type="text">
     <label for="">Apellido</label>

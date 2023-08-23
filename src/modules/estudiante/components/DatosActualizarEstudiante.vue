@@ -14,7 +14,7 @@
     <input v-model="fecha" type="text" />
     <label for="">Provincia</label>
     <input v-model="provincia" type="text" />
-    <button @click="actualizarEstudiante">Actualizar</button>
+    <button type="button" class="btn btn-outline-secondary" @click="actualizarEstudiante">Actualizar</button>
   </div>
 </template>
 

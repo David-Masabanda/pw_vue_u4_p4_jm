@@ -1,9 +1,9 @@
 <template>
   <div class="rutas">
-    <router-link to="/consultar"> Consultar </router-link>
-    <router-link to="/guardar"> Guardar </router-link>
-    <router-link to="/actualizar"> Actualizar </router-link>
-    <router-link to="/eliminar"> Eliminar </router-link>
+    <router-link type="button" class="btn btn-outline-success" to="/consultar"> Consultar </router-link>
+    <router-link type="button" class="btn btn-outline-secondary" to="/guardar"> Guardar </router-link>
+    <router-link type="button" class="btn btn-outline-primary" to="/actualizar"> Actualizar </router-link>
+    <router-link type="button" class="btn btn-outline-danger" to="/eliminar"> Eliminar </router-link>
   </div>
 </template>
 
@@ -23,7 +23,9 @@ export default {};
   width: 30%;
   font-size: 20px;
   font-weight: bold;
-  background-color: rgb(137, 151, 220);
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 </style>

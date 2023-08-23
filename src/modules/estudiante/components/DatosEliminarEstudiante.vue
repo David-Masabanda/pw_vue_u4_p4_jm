@@ -3,7 +3,7 @@
     <h1> Eliminar Estudiante </h1>
     <img src="https://cdn-icons-png.flaticon.com/512/6301/6301508.png" alt="">
     <input v-model="id" type="text" />
-    <button @click="eliminarEstudiante">Eliminar</button>
+    <button type="button" class="btn btn-outline-danger" @click="eliminarEstudiante">Eliminar</button>
   </div>
 </template>
 
