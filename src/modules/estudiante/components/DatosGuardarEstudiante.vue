@@ -8,6 +8,8 @@
     <input v-model="nombre" type="text" />
     <label for="">Apellido</label>
     <input v-model="apellido" type="text" />
+    <label for="">Fecha</label>
+    <input v-model="fecha" type="text" />
     <label for="">Provincia</label>
     <input v-model="provincia" type="text" />
     <button @click="guardarEstudiante">Guardar</button>
@@ -25,6 +27,7 @@ export default {
       nombre: null,
       apellido: null,
       provincia: null,
+      fecha: null,
     };
   },
 
@@ -35,6 +38,7 @@ export default {
         nombre: this.nombre,
         apellido: this.apellido,
         provincia: this.provincia,
+        fechaNacimiento: this.fecha
       };
       await ingresarEstudianteFachada(data);
     },
