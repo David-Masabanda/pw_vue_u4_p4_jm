@@ -37,7 +37,7 @@ export const obtenerEstudianteAPI = async (cedula) => {
 
 const obtenerEstudianteAPIAxios = async (cedula) => {
     const headers = {
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEYXZpZCIsImlhdCI6MTY5MjgxMDcyMSwiZXhwIjoxNjkyODIwNzIxfQ.pWaT6O5_bQzXnfToQE-ZToHlUaej3wdnUpNiiGBoeZ0hNoWVB7ExHDdYYgmZR6iDpI8XJ1JlTMYm7Q-EYtizMg",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEYXZpZCIsImlhdCI6MTY5MjgxNDk0OSwiZXhwIjoxNjkyODI0OTQ5fQ.e9clcKL8Zju8aRqNyJrSQS4BVDLeYPgXuzmhvzjZl72CCdyto2V-2Ao0Fpm7jMXPsqwmkzvI0qhV6A4sPTiohQ",
         "Mensaje": "Valor1"
     }
     console.log("AXIOS 2")
@@ -48,7 +48,7 @@ const obtenerEstudianteAPIAxios = async (cedula) => {
 
 const ingresarEstudianteAPIAxios = (bodyEstudiante) => {
     const headers = {
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEYXZpZCIsImlhdCI6MTY5MjgxMDcyMSwiZXhwIjoxNjkyODIwNzIxfQ.pWaT6O5_bQzXnfToQE-ZToHlUaej3wdnUpNiiGBoeZ0hNoWVB7ExHDdYYgmZR6iDpI8XJ1JlTMYm7Q-EYtizMg",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEYXZpZCIsImlhdCI6MTY5MjgxNDk0OSwiZXhwIjoxNjkyODI0OTQ5fQ.e9clcKL8Zju8aRqNyJrSQS4BVDLeYPgXuzmhvzjZl72CCdyto2V-2Ao0Fpm7jMXPsqwmkzvI0qhV6A4sPTiohQ",
         "Mensaje": "Valor1"
     }
     console.log("AXIOS Guardar")
@@ -57,7 +57,7 @@ const ingresarEstudianteAPIAxios = (bodyEstudiante) => {
 
 const actualizarEstudianteAPIAxios = (bodyEstudiante, id) => {
     const headers = {
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEYXZpZCIsImlhdCI6MTY5MjgxMDcyMSwiZXhwIjoxNjkyODIwNzIxfQ.pWaT6O5_bQzXnfToQE-ZToHlUaej3wdnUpNiiGBoeZ0hNoWVB7ExHDdYYgmZR6iDpI8XJ1JlTMYm7Q-EYtizMg",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEYXZpZCIsImlhdCI6MTY5MjgxNDk0OSwiZXhwIjoxNjkyODI0OTQ5fQ.e9clcKL8Zju8aRqNyJrSQS4BVDLeYPgXuzmhvzjZl72CCdyto2V-2Ao0Fpm7jMXPsqwmkzvI0qhV6A4sPTiohQ",
         "Mensaje": "Valor1"
     }
     console.log("AXIOS Actualizar")
@@ -66,7 +66,7 @@ const actualizarEstudianteAPIAxios = (bodyEstudiante, id) => {
 
 const eliminarEstudianteAPIAxios = (id) => {
     const headers = {
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEYXZpZCIsImlhdCI6MTY5MjgxMDcyMSwiZXhwIjoxNjkyODIwNzIxfQ.pWaT6O5_bQzXnfToQE-ZToHlUaej3wdnUpNiiGBoeZ0hNoWVB7ExHDdYYgmZR6iDpI8XJ1JlTMYm7Q-EYtizMg",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEYXZpZCIsImlhdCI6MTY5MjgxNDk0OSwiZXhwIjoxNjkyODI0OTQ5fQ.e9clcKL8Zju8aRqNyJrSQS4BVDLeYPgXuzmhvzjZl72CCdyto2V-2Ao0Fpm7jMXPsqwmkzvI0qhV6A4sPTiohQ",
         "Mensaje": "Valor1"
     }
     console.log("AXIOS Eliminar")

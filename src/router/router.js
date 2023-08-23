@@ -19,6 +19,16 @@ const routes = [
         path: "/eliminar",
         component: () => import('../modules/estudiante/pages/EliminarEstudiante'),
     }
+    ,
+    {
+        path: "/Responsive",
+        component: () => import('../responsiveWeb/responsiveWeb'),
+    }
+    ,
+    {
+        path: "/MediaQuery",
+        component: () => import('../responsiveWeb/responsiveMediaQ'),
+    }
 ]
 
 const router = createRouter({

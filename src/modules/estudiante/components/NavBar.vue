@@ -5,6 +5,11 @@
     <router-link type="button" class="btn btn-outline-primary" to="/actualizar"> Actualizar </router-link>
     <router-link type="button" class="btn btn-outline-danger" to="/eliminar"> Eliminar </router-link>
   </div>
+  <div class="extras">
+    <router-link type="button" class="btn btn-outline-danger" to="/Responsive"> Responsive </router-link>
+    <router-link type="button" class="btn btn-outline-danger" to="/MediaQuery"> MediaQuery </router-link>
+  </div>
+  
 </template>
 
 <script>
